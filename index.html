@@ -1,21 +1,121 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Tambura Pictures</title>
+
   <style>
-    body {
-      background: #111;
-      color: white;
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding-top: 20%;
+    body{
+      margin:0;
+      font-family: Arial, Helvetica, sans-serif;
+      background:#fff;
+      color:#111;
     }
-    h1 { font-size: 48px; letter-spacing: 2px; }
-    p { font-size: 20px; opacity: 0.8; }
+
+    header{
+      padding:40px 60px 10px 60px;
+      display:flex;
+      align-items:center;
+      gap:15px;
+    }
+
+    /* SAME IMAGE — SMALL */
+    .logo{
+      width:50px;
+      height:50px;
+      object-fit:contain;
+    }
+
+    .brandname{
+      font-weight:800;
+      letter-spacing:1px;
+      text-transform:uppercase;
+    }
+
+    main{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      padding:60px;
+      align-items:center;
+    }
+
+    h1{
+      font-size:72px;
+      margin:0 0 30px 0;
+      font-weight:900;
+      line-height:0.95;
+    }
+
+    .taglines p{
+      font-weight:800;
+      margin:12px 0;
+      font-size:22px;
+      text-transform:uppercase;
+    }
+
+    /* SAME IMAGE — LARGE */
+    .heroimg{
+      width:420px;
+      height:560px;
+      object-fit:cover;
+    }
+
+    footer{
+      display:flex;
+      justify-content:space-between;
+      padding:40px 60px;
+      font-weight:800;
+      text-transform:uppercase;
+      font-size:14px;
+    }
+
+    @media(max-width:900px){
+      main{
+        grid-template-columns:1fr;
+      }
+      .heroimg{
+        margin-top:40px;
+        width:100%;
+        height:auto;
+      }
+    }
   </style>
 </head>
+
 <body>
-  <h1>Tambura Pictures</h1>
-  <p>Stories in Motion.<br>Full website premiering soon.</p>
+
+<header>
+  <img src="tambura.png" class="logo">
+  <div class="brandname">Tambura Pictures</div>
+</header>
+
+<main>
+  <div>
+    <h1>TAMBURA<br>PICTURES</h1>
+
+    <div class="taglines">
+      <p>Original Voices.</p>
+      <p>Cultural Soul.</p>
+      <p>Cinematic Experiences.</p>
+    </div>
+  </div>
+
+  <div>
+    <img src="tambura.png" class="heroimg">
+  </div>
+</main>
+
+<footer>
+  <div>
+    Our story is still in production.<br>
+    The full experience is coming soon.
+  </div>
+  <div>
+    inquiries@tamburapictures.com
+  </div>
+</footer>
+
 </body>
 </html>
+
