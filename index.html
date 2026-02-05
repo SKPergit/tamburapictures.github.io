@@ -81,7 +81,7 @@
       display:flex;
       align-items:flex-start;
       gap:10px;
-      margin-bottom:18px;
+      margin-bottom:30px;
       font-size:13px;
       text-transform:none;
       font-weight:400;
@@ -97,14 +97,24 @@
     .press-list{
       display:flex;
       flex-direction:column;
-      gap:6px;
+      gap:12px; /* more space between press items */
     }
 
     .press-item{
-      font-size:13px;
-      font-weight:400;
-      text-transform:none;
-    }
+  display:flex;
+  align-items:flex-start;
+  gap:8px;
+  font-size:15px; /* slightly larger */
+  font-weight:400;
+  text-transform:none;
+}
+
+    .press-star{
+  color:#b58a3a; /* same subtle gold */
+  font-size:12px;
+  line-height:1.4;
+  margin-top:2px;
+}
 
     .press-strip a{
       font-style:italic;
@@ -173,15 +183,17 @@
           </a>
         </div>
 
-        <div class="press-item">
-          <a
-            href="https://www.hollywoodreporter.com/movies/movie-news/jackie-earle-haley-lou-diamond-phillips-widow-1236452403/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            The Hollywood Reporter — The Widow casting announcement
-          </a>
-        </div>
+        <div class="press-item starred">
+  <span class="press-star">★</span>
+  <a
+    href="https://www.hollywoodreporter.com/movies/movie-news/jackie-earle-haley-lou-diamond-phillips-widow-1236452403/"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    The Hollywood Reporter — The Widow casting announcement
+  </a>
+</div>
+
       </div>
     </div>
 
