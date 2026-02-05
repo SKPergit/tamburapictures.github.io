@@ -97,28 +97,29 @@
 }
 
 
-    .press-list{
-      display:flex;
-      flex-direction:column;
-      gap:12px; /* more space between press items */
-    }
-
-   .press-item{
+  .press-list{
   display:flex;
-  align-items:baseline; /* key change */
+  flex-direction:column;
   gap:12px;
-  font-size:17px; /* confident but not loud */
+}
+
+.press-item{
+  display:flex;
+  align-items:baseline;
+  gap:14px;
+  font-size:17px;
+  line-height:1.4;
   font-weight:400;
-  line-height:1.4;
 }
 
-    .press-star{
-  color:#b58a3a; /* same subtle gold */
-  font-size:12px;
-  line-height:1.4;
-  margin-top:2px;
+  .press-star{
+  width:18px;              /* fixed icon column */
+  text-align:center;
+  color:#b58a3a;           /* subtle gold */
+  font-size:13px;
+  line-height:1;
+  flex-shrink:0;           /* prevents shifting */
 }
-
     .press-strip a{
       font-style:italic;
       color:#111;
