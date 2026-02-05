@@ -20,7 +20,6 @@
       gap:15px;
     }
 
-    /* SAME IMAGE — SMALL */
     .logo{
       width:50px;
       height:50px;
@@ -54,7 +53,6 @@
       text-transform:uppercase;
     }
 
-    /* SAME IMAGE — LARGE */
     .heroimg{
       width:420px;
       height:560px;
@@ -62,53 +60,65 @@
     }
 
     footer{
-  display:flex;
-  justify-content:space-between;
-  align-items:flex-end;
-  padding:40px 60px;
-  font-weight:800;
-  text-transform:uppercase;
-  font-size:14px;
-}
+      display:flex;
+      justify-content:space-between;
+      align-items:flex-end;
+      padding:40px 60px;
+      font-weight:800;
+      text-transform:uppercase;
+      font-size:14px;
+    }
 
-.footer-left{
-  max-width:70%;
-}
+    .footer-left{
+      max-width:70%;
+    }
 
-.footer-right{
-  white-space:nowrap;
-}
+    .footer-right{
+      white-space:nowrap;
+    }
 
-.press-strip{
-  display:flex;
-  align-items:center;
-  gap:10px;
-  margin-bottom:18px;
-  font-size:13px;
-  text-transform:none;
-  font-weight:400;
-}
+    .press-strip{
+      display:flex;
+      align-items:flex-start;
+      gap:10px;
+      margin-bottom:18px;
+      font-size:13px;
+      text-transform:none;
+      font-weight:400;
+    }
 
-.press-icon{
-  color:#b58a3a; /* subtle gold */
-  font-size:10px;
-  line-height:1;
-}
+    .press-icon{
+      color:#b58a3a;
+      font-size:10px;
+      line-height:1.4;
+      margin-top:4px;
+    }
 
-.press-strip a{
-  font-style:italic;
-  color:#111;
-  text-decoration:none;
-}
+    .press-list{
+      display:flex;
+      flex-direction:column;
+      gap:6px;
+    }
 
-.press-strip a:hover{
-  text-decoration:underline;
-}
+    .press-item{
+      font-size:13px;
+      font-weight:400;
+      text-transform:none;
+    }
 
-.footer-copy{
-  font-weight:800;
-}
+    .press-strip a{
+      font-style:italic;
+      color:#111;
+      text-decoration:none;
+    }
 
+    .press-strip a:hover{
+      text-decoration:underline;
+    }
+
+    .footer-copy{
+      font-weight:800;
+    }
 
     @media(max-width:900px){
       main{
@@ -146,21 +156,33 @@
   </div>
 </main>
 
-
 <footer>
   <div class="footer-left">
     <div class="press-strip">
       <span class="press-icon">◆</span>
-      <span class="press-text">
-        As seen in
-        <a
-          href="https://www.hollywoodreporter.com/movies/movie-news/script2comic-contest-returns-with-widow-producer-1236494311/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          The Hollywood Reporter — Script2Comic announcement
-        </a>
-      </span>
+
+      <div class="press-list">
+        <div class="press-item">
+          As seen in
+          <a
+            href="https://www.hollywoodreporter.com/movies/movie-news/script2comic-contest-returns-with-widow-producer-1236494311/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            The Hollywood Reporter — Script2Comic announcement
+          </a>
+        </div>
+
+        <div class="press-item">
+          <a
+            href="https://www.hollywoodreporter.com/movies/movie-news/jackie-earle-haley-lou-diamond-phillips-widow-1236452403/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            The Hollywood Reporter — The Widow casting announcement
+          </a>
+        </div>
+      </div>
     </div>
 
     <div class="footer-copy">
@@ -174,7 +196,5 @@
   </div>
 </footer>
 
-
 </body>
 </html>
-
