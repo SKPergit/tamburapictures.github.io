@@ -59,80 +59,74 @@
       object-fit:cover;
     }
 
-    footer{
-      display:flex;
-      justify-content:space-between;
-      align-items:flex-end;
-      padding:40px 60px;
-      font-weight:800;
-      text-transform:uppercase;
-      font-size:14px;
-    }
-
-    .footer-left{
-      max-width:70%;
-    }
-
-    .footer-right{
-      white-space:nowrap;
-    }
-
-    .press-strip{
-      display:flex;
-      align-items:flex-start;
-      gap:10px;
-      margin-bottom:44px;
-      font-size:13px;
-      text-transform:none;
-      font-weight:400;
-    }
-
-    .press-icon,
-.press-star{
-  color:#b58a3a;
-  font-size:12px;
-  line-height:1;
-  display:inline-block;
-  transform: translateY(-1px);
+  footer{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  padding:28px 60px; /* reduced to avoid scroll */
+  font-weight:800;
+  text-transform:uppercase;
+  font-size:14px;
 }
 
-
-  .press-list{
+.footer-left{
+  max-width:70%;
   display:flex;
   flex-direction:column;
-  gap:12px;
+  gap:16px;          /* controlled spacing */
+  text-align:left;   /* keeps slogan left */
+}
+
+.footer-right{
+  white-space:nowrap;
+  text-align:right;
+}
+
+.press-strip{
+  margin:0;          /* no extra push */
+  text-transform:none;
+  font-weight:400;
+}
+
+.press-list{
+  display:flex;
+  flex-direction:column;
+  gap:10px;          /* spacing between the two press lines */
 }
 
 .press-item{
   display:flex;
   align-items:baseline;
-  gap:14px;
-  font-size:17px;
-  line-height:1.4;
+  gap:12px;
+  font-size:16px;    /* slightly smaller to reduce height */
+  line-height:1.35;
   font-weight:400;
+  text-transform:none;
 }
 
-  .press-star{
-  width:18px;              /* fixed icon column */
+.press-star{
+  width:18px;
   text-align:center;
-  color:#b58a3a;           /* subtle gold */
-  font-size:13px;
+  color:#b58a3a;
+  font-size:12px;
   line-height:1;
-  flex-shrink:0;           /* prevents shifting */
+  flex-shrink:0;
 }
-    .press-strip a{
-      font-style:italic;
-      color:#111;
-      text-decoration:none;
-    }
 
-    .press-strip a:hover{
-      text-decoration:underline;
-    }
+.press-strip a{
+  font-style:italic;
+  color:#111;
+  text-decoration:none;
+}
 
-    .footer-copy{
-      font-weight:800;
-    }
+.press-strip a:hover{
+  text-decoration:underline;
+}
+
+.footer-copy{
+  font-weight:800;
+}
+
 
     @media(max-width:900px){
       main{
@@ -173,35 +167,31 @@
 <footer>
   <div class="footer-left">
     <div class="press-strip">
-  <div class="press-list">
-    <div class="press-item">
-      <span class="press-star">★</span>
-      <span>
-        As seen in
-        <a
-          href="https://www.hollywoodreporter.com/movies/movie-news/script2comic-contest-returns-with-widow-producer-1236494311/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          The Hollywood Reporter — Script2Comic announcement
-        </a>
-      </span>
-    </div>
+      <div class="press-list">
+        <div class="press-item">
+          <span class="press-star">★</span>
+          <span>
+            As seen in
+            <a
+              href="https://www.hollywoodreporter.com/movies/movie-news/script2comic-contest-returns-with-widow-producer-1236494311/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              The Hollywood Reporter — Script2Comic announcement
+            </a>
+          </span>
+        </div>
 
-    <div class="press-item">
-      <span class="press-star">★</span>
-      <a
-        href="https://www.hollywoodreporter.com/movies/movie-news/jackie-earle-haley-lou-diamond-phillips-widow-1236452403/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        The Hollywood Reporter — The Widow casting announcement
-      </a>
-    </div>
-  </div>
-</div>
-
-
+        <div class="press-item">
+          <span class="press-star">★</span>
+          <a
+            href="https://www.hollywoodreporter.com/movies/movie-news/jackie-earle-haley-lou-diamond-phillips-widow-1236452403/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            The Hollywood Reporter — The Widow casting announcement
+          </a>
+        </div>
       </div>
     </div>
 
@@ -215,6 +205,7 @@
     collaborate@tamburapictures.com
   </div>
 </footer>
+
 
 </body>
 </html>
